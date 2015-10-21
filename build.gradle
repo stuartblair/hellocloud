@@ -3,9 +3,7 @@ buildscript {
         springBootVersion = '1.2.7.RELEASE'
     }
     repositories {
-      maven {
-        url "http://artifactory.gapinc.dev/artifactory/remote-repos"
-      }
+        mavenCentral()
     }
     dependencies {
       classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}") 
